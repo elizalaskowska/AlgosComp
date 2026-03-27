@@ -7,7 +7,7 @@ void find_mst (Graph &my_graph, Mst &my_mst, const int &num_of_vertices){
     if_in_mst [1] = 1;
     int size_of_mst = 1, total_cost = 0;
     for (int i = 0; i < my_graph[1].size(); i++)
-        prior_queue.push ({my_graph[1][i].second, {my_graph[1][i].first, 1}});
+        prior_queue.push ({-my_graph[1][i].second, {my_graph[1][i].first, 1}});
     while(size_of_mst < num_of_vertices){
             act_node = prior_queue.top();
             prior_queue.pop();

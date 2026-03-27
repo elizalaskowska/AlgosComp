@@ -24,9 +24,7 @@ typedef vector < Node > Mst;
 
 void Generate_map (Map &My_map, const int &num_of_vertices, const int &num_of_edges, const int &max_weight);
 
-void write_graph (const Map &My_map, const int &num_of_vertices, const int &num_of_edges);
-
 void make_graph (const Map &My_map, Graph &My_graph, const int &num_of_vertices, const int &num_of_edges);
 
-void Read_data(Map &My_map, Graph &My_graph, int &num_of_vertices, int &num_of_edges, int &max_weight);
+void generate_graph(Map &My_map, Graph &My_graph, int &num_of_vertices, int &num_of_edges, int &max_weight);
 
