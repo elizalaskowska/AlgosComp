@@ -1,6 +1,7 @@
 #include "graph_generator.hpp"
 #include "prim.hpp"
 #include "stream.hpp"
+#include "kruskal.hpp"
 
 int main(){
     Map my_map;
@@ -11,7 +12,9 @@ int main(){
     generate_graph(my_map, my_graph, num_of_vertices, num_of_edges, max_weight); 
    // write_graph(my_graph, num_of_vertices, num_of_edges);
     write_graph_to_file (my_graph, num_of_vertices, num_of_edges);
-    find_mst (my_graph, my_mst, num_of_vertices, result);
+   // find_mst (my_graph, my_mst, num_of_vertices, result);
+   find_mst_kruskal(my_graph, my_mst, num_of_vertices, num_of_edges, result);
     print_mst(my_mst);
     write_mst_to_file(my_mst);
+    
 }
