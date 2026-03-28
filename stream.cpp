@@ -20,7 +20,6 @@ void write_graph (const Graph &My_graph, const int &num_of_vertices, const int &
 void write_graph_to_file (const Graph &My_graph, const int &num_of_vertices, const int &num_of_edges){
     ofstream data("graph.txt");
     if(data.is_open()){
-        data<<num_of_vertices<<" "<<num_of_edges<<'\n';
         for(int i=1; i<=num_of_vertices; i++){
             for(auto vert:My_graph[i]){
                 if(i<vert.first)
@@ -35,7 +34,7 @@ void write_mst_to_file (const Mst &my_mst){
     ofstream data("mst.txt");
     if(data.is_open()){
         for(int i=0; i<my_mst.size(); i++)
-            data << my_mst[i].first << " " << my_mst[i].second.first << " "<< my_mst[i].second.second<<'\n';
+            data  << my_mst[i].second.first << " "<< my_mst[i].second.second<< " " << my_mst[i].first<<'\n';
         data.close();
     } 
 }
