@@ -20,6 +20,8 @@ typedef vector <vector < pair < int, int >>> Graph;
 typedef unordered_map<pair<int, int>, int, pair_hash> Map;
 typedef pair <int, pair < int, int >> Node;
 typedef vector < Node > Mst;
+typedef pair <int, pair<int, int>> Edge;
+typedef vector < Edge > Edge_list;
 
 
 void Generate_map (Map &My_map, const int &num_of_vertices, const int &num_of_edges, const int &max_weight);

@@ -1,7 +1,5 @@
 #include "graph_generator.hpp"
 #include "union_find.hpp"
- 
-typedef vector < Edge > Edge_list;
 
 void prepare_edge_list(const Graph &my_graph, Edge_list &my_edge_list);
 
