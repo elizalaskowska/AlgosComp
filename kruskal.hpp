@@ -1,3 +1,4 @@
+#pragma once
 #include "graph_generator.hpp"
 #include "union_find.hpp"
 

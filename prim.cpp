@@ -1,6 +1,6 @@
 #include "prim.hpp"
 
-void find_mst (Graph &my_graph, Mst &my_mst, const int &num_of_vertices, int &result){
+void find_mst_prim (Graph &my_graph, Mst &my_mst, const int &num_of_vertices, const int &num_of_edges, int &result){
     priority_queue < Node > prior_queue; // < cost, < vert_1, vert_2 >>
     vector < bool > if_in_mst (num_of_vertices+1);
     Node act_node;
